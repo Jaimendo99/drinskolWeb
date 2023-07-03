@@ -1,0 +1,96 @@
+{% extends "layout.html"%}
+{% block content %}
+
+<title>DrinSkol - Home</title>
+<!-- <h1>Welcome Home</h1> -->
+<!-- logout icon -->
+
+
+<div id="home-main-card"
+    class="card home-card position-absolute top-50 start-50 translate-middle  shadow-lg p-3 mb-5  rounded">
+<div>
+    <div class="position-absolute top-0 end-0 logout-icon">
+        <a href=""><span class="material-symbols-outlined icon-color">logout</span></a>
+        <a href="" >
+            <span class="material-symbols-outlined icon-color">
+                person
+            </span>
+        </a>
+    </div>
+    <h1 class="text-center h2-cooler card-title">Management</h1>
+</div>
+
+
+    <div class="home-container card-body">
+        <div class="item-a">
+            <button class="no-desing shadow-sm">
+                <div class="mana-content">
+
+                    <div class="img-fg" style="background-color: #83c991">
+
+                        <div class="mana-img-text">
+                            <h2>Drinks</h2>
+                            Drinks management options
+                        </div>
+                    </div>
+
+                    <img class="mana-img-1" src="../static/images/drinks-mana.png" alt="drinks background">
+                </div>
+            </button>
+        </div>
+
+        <div class="item-b">
+            <button class="no-desing shadow-sm">
+                <div class="mana-content">
+
+                    <div class="img-fg" style="background-color: #fbb985">
+
+                        <div class="mana-img-text">
+                            <h2>Ingridients</h2>
+                            Ingridients management options
+                        </div>
+                    </div>
+
+                    <img class="mana-img-1" src="../static/images/ingridients-mana.png" alt="drinks background">
+                </div>
+            </button>
+        </div>
+        <div class="item-c">
+            <button class="no-desing">
+                <div class="mana-content">
+
+                    <div class="img-fg" style="background-color: #fdf1a9">
+
+                        <div class="mana-img-text">
+                            <h2>Users</h2>
+                            Users management options
+                        </div>
+                    </div>
+
+                    <img class="mana-img-1" src="../static/images/users-mana.png" alt="drinks background">
+                </div>
+            </button>
+
+        </div>
+        <div class="item-d">
+            <button class="no-desing">
+                <div class="mana-content">
+
+                    <div class="img-fg" style="background-color: #9fd8d0">
+
+                        <div class="mana-img-text">
+                            <h2>Tags</h2>
+                            Tags management options
+                        </div>
+                    </div>
+
+                    <img class="mana-img-1" src="../static/images/tags-mana.png" alt="drinks background">
+                </div>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

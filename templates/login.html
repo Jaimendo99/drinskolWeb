@@ -1,0 +1,38 @@
+<!-- colors:
+    #83c991
+    #4f1a15
+    #fdf1a9
+    #fbb985
+    #9fd8d0-->
+
+{% extends "layout.html"%}
+{% block content %}
+
+
+<div id="loggin-card" class="card card-login position-absolute top-50 start-50 translate-middle shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+    <div class="mx-auto">
+        <img src="https://firebasestorage.googleapis.com/v0/b/drinskolapi.appspot.com/o/drinskolLogo.svg?alt=media&token=6e817eb6-5856-4874-95c7-484d8e8b9b3d"
+            class="img-fluid logo-loggin text-center" alt="drinskolLOGO">
+    </div>
+    <!-- separatiion  -->
+    <div class="separation"></div>
+         <!-- <h1 class="text-center ">Login</h1> -->
+    <form method="POST">
+        <div class="form-floating mb-3">
+            <input name="username" type="username" class="form-control" id="floatingInput" placeholder="username">
+            <label for="floatingInput">Username</label>
+        </div>
+        <div class="form-floating">
+            <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+        <div class="text-center">
+            <button action="login_post" type="submit" class="btn login-button">Login</button>
+            <button action="create-user" type="submit" class="btn signup-button">Sign Up</button>
+        </div>
+        <!-- <div class="text-center">
+        </div> -->
+    </form>
+</div>
+
+{% endblock %}
